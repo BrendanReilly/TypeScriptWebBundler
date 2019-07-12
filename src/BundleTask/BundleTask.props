@@ -1,0 +1,3 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <UsingTask TaskName="BundleTask" TaskFactory="BReilly.BundleTask" AssemblyFile="BundleTask.dll"/>
+</Project>
