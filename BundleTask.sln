@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29021.104
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BundleTask", "src\BundleTask\BundleTask.csproj", "{BEA29CA7-56F3-4AD1-9300-563291EF00FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BundlerTest", "tests\BundlerTest\BundlerTest.csproj", "{4230F9D2-9C9F-4991-8FE7-87D4FF631A27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEA29CA7-56F3-4AD1-9300-563291EF00FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA29CA7-56F3-4AD1-9300-563291EF00FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA29CA7-56F3-4AD1-9300-563291EF00FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA29CA7-56F3-4AD1-9300-563291EF00FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4230F9D2-9C9F-4991-8FE7-87D4FF631A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4230F9D2-9C9F-4991-8FE7-87D4FF631A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4230F9D2-9C9F-4991-8FE7-87D4FF631A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4230F9D2-9C9F-4991-8FE7-87D4FF631A27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0C21196-7112-490C-B4B9-E09D87B1AE40}
+	EndGlobalSection
+EndGlobal

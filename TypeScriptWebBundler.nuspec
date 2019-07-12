@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>TypeScriptWebBundler</id>
+    <version>1.0.0</version>
+    <authors>Brendan Reilly</authors>
+    <owners>Brendan Reilly</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <developmentDependency>true</developmentDependency>
+    <description>Typescript compiler and bundler for use in a browser.</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Microsoft.Build.Utilities.Core" version="16.0.461" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+    <files>
+      <file src="src\BundleTask\bin\Debug\netstandard2.1\*.dll" target="build/netstandard2.1" />
+      <file src="src\BundleTask\build\**\*.*" target="build/" />
+    </files>
+</package>

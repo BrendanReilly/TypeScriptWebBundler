@@ -1,11 +1,23 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
+<PropertyGroup>
+  <AssemblyName>BundleTask</AssemblyName>
+</PropertyGroup>
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Brendan Reilly</Authors>
+    <Version>1.0.0-BETA</Version>
+    <Description>Typescript compiler and bundler for use in a browser.</Description>
+    <RootNamespace>BReilly</RootNamespace>
 
+  </PropertyGroup>
+  <Import Project="BundleTask.props" />
   <ItemGroup>
     <PackageReference Include="Microsoft.Build.Utilities.Core" Version="16.0.461" />
   </ItemGroup>
-
+  <!--
+  <Target Name="TestBundleTask" AfterTargets="AfterBuild">
+    <BundleTask></BundleTask>
+  </Target>-->
 </Project>

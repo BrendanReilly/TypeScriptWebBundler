@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Resources;
+using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
 
 namespace BReilly
@@ -10,8 +11,9 @@ namespace BReilly
 
         public override bool Execute()
         {
-            Console.WriteLine("Task executed");
-            throw new NotImplementedException();
+            Console.WriteLine("Hello");
+            Log.LogMessage(MessageImportance.High, "BundleTask finished successfully.");
+            return true;
         }
     }
 }

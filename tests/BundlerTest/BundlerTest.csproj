@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+<!-- 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\BundleTask\BundleTask.csproj" />
+  </ItemGroup> -->
+
+  <ItemGroup>
+    <PackageReference Include="TypeScriptWebBundler" Version="1.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+
+  <UsingTask TaskName="BReilly.BundleTask" AssemblyName="BundleTask" />
+  <Target Name="TestBundleTask" BeforeTargets="Build">
+    <BundleTask></BundleTask>
+  </Target>
+
+</Project>
